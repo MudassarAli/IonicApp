@@ -1,0 +1,37 @@
+<ion-nav-bar></ion-nav-bar>
+<ion-view view-title="{{hovedrett.name}}">
+
+ <ion-nav-buttons side="right">  
+    <div ng-controller="FavoriteCtrl"> 
+         <button class="button button-icon ion-android-favorite-outline" 
+              ng-disabled="{{data.isItemInFavorites(hovedrett)}}"  
+              ng-click="addToFavorites({{hovedrett}})">
+         </button>
+    </div>
+
+    <div ng-controller="ShareCtrl">
+         <button class="button button-icon icon ion-android-share-alt"  
+              ng-click="shareAnywhere()">        
+         </button>
+    </div>
+  </ion-nav-buttons>
+
+
+  <ion-content class="padding auto" >
+    <img ng-src="{{hovedrett.image}}" style="width:100%">   
+
+    <div class="card">
+        <div class="item item-divider item-assertive">
+          {{hovedrett.name}} (kr. {{hovedrett.price}},-)
+        </div>
+        <div class="list list-inset">            
+            <div class="item item-divider">
+              Ingredienser
+            </div>
+            <div class="item">
+               {{hovedrett.text}}
+            </div>           
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

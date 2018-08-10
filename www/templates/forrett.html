@@ -1,0 +1,38 @@
+<ion-nav-bar></ion-nav-bar>
+<ion-view view-title="{{forrett.name}}">
+
+  <ion-nav-buttons side="right">  
+    <div ng-controller="FavoriteCtrl"> 
+         <button class="button button-icon ion-android-favorite-outline" 
+              ng-disabled="{{data.isItemInFavorites(forrett)}}"  
+              ng-click="addToFavorites({{forrett}})">
+         </button>
+    </div>
+    
+    <div ng-controller="ShareCtrl">
+         <button class="button button-icon icon ion-android-share-alt"  
+              ng-click="shareAnywhere()">        
+         </button>
+    </div>
+  </ion-nav-buttons>
+
+  <ion-content class="padding " >
+    <img ng-src="{{forrett.image}}" style="width:100%">   
+
+    <div class="card">
+        <div class="item item-divider item-assertive">
+          {{forrett.name}} (kr. {{forrett.price}},-)
+        </div>
+        <div class="item item-text-wrap">
+          <div class="list list-inset">            
+            <div class="item item-divider">
+              Ingredienser
+            </div>
+            <div class="item">
+              {{forrett.text}}
+            </div>           
+          </div>
+        </div>     
+     </div>
+  </ion-content>
+</ion-view>

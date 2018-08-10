@@ -1,0 +1,64 @@
+/* Empty. Add your own CSS if you like */
+.forrett-logo {
+    background:url(../img/forrett.png) no-repeat center;
+    display:block;
+    height:160px;
+    text-indent:-9999px;
+    border-radius: 25px;
+}
+
+.hovedrett-logo {
+    background:url(../img/hovedrett.png) no-repeat center;
+    display:block;
+    height:160px;
+    text-indent:-9999px;
+    border-radius: 25px;
+}
+
+.dessert-logo {
+    background:url(../img/dessert.png) no-repeat center;
+    display:block;
+    height:160px;
+    text-indent:-9999px;
+    border-radius: 25px;
+}
+
+.drikke-logo {
+    background:url(../img/drikke.png) no-repeat center;
+    display:block;
+    height:160px;
+    text-indent:-9999px;
+    border-radius: 25px;
+}
+
+.goldencrown-logo {
+    background:url(../img/goldencrown.png) no-repeat center;
+    display:block;
+    height:180px;
+    text-indent:-9999px;
+    border-radius: 25px;    
+}
+
+.item-background-header{
+
+    background-color: gray;
+    color: white;
+}
+
+.item-content-background{
+    background:url(../img/bg1.png) no-repeat;
+   
+}
+
+gm-map {
+    display: block;
+    width: 100%;
+    height: 1000px;
+}
+
+
+
+
+
+
+

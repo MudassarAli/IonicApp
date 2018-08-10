@@ -1,0 +1,39 @@
+<ion-nav-bar></ion-nav-bar>
+<ion-view view-title="{{dessert.name}}">
+
+  <ion-nav-buttons side="right">  
+    <div ng-controller="FavoriteCtrl"> 
+         <button class="button button-icon ion-android-favorite-outline" 
+              ng-disabled="{{data.isItemInFavorites(dessert)}}"  
+              ng-click="addToFavorites({{dessert}})">
+         </button>
+    </div>
+
+    <div ng-controller="ShareCtrl">
+         <button class="button button-icon icon ion-android-share-alt"  
+              ng-click="shareAnywhere()">        
+         </button>
+    </div>
+  </ion-nav-buttons>
+
+
+  <ion-content class="padding auto" >
+    <img ng-src="{{dessert.image}}" style="width:100%">   
+
+    <div class="card">
+        <div class="item item-divider item-assertive">
+          {{dessert.name}} (kr. {{dessert.price}},-)
+        </div>
+        <div class="item item-text-wrap">
+           <div class="list list-inset">            
+            <div class="item item-divider">
+              Ingredienser
+            </div>
+            <div class="item">
+              {{dessert.text}}
+            </div>           
+          </div>          
+        </div>     
+     </div>
+  </ion-content>
+</ion-view>
