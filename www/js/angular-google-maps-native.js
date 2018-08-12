@@ -6,7 +6,6 @@
     $q, $parse, $timeout,
     gmAddress = 'gmAddress';
 
-
   /**
    * Handle google.maps services as singleton
    * @param name {string}
